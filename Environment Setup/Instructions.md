@@ -10,8 +10,11 @@ These instructions will guide you through each step in the process. Make sure to
 Before starting these instructions, make sure you have the following:
 ------
 1. Know your computer type, model, and OS version. Macs and Window machines run slightly differently!
-2. Ensure you have administrative permissions on your machine
-3. If you run into trouble, ask for help in our Course Q&A discussion. Make sure to note which section and step you are on.
+   I have designated system-specific instructions using the following logos:
+   ![Windows](https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Windows.png)
+   ![Mac](https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Mac.png)
+3. Ensure you have administrative permissions on your machine
+4. If you run into trouble, ask for help in our Course Q&A discussion. Make sure to note which section and step you are on.
 
 Docker Set Up
 ======
@@ -25,11 +28,24 @@ Step 2: Open Docker
 ------
 Open the application you just downloaded to ensure it is functioning correctly. You will see something like this:
 
-![Docker](https://ibb.co/vw9Vm7p)
+![Docker]((https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Docker_Home.png))
 
 
 Step 2: Download SQL Server Docker Image
 ------
+Next, we need to download the SQL Server Docker Image, which is a file used to execute code in Docker. Open the **command line** (also called the **terminal** on Mac). 
+
+![Windows](https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Windows.png)
+From the command line, enter this:
+```
+docker pull mcr.microsoft.com/mssql/server:latest
+```
+![Mac](https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Mac.png)
+From the terminal, enter this:
+```
+sudo docker pull mcr.microsoft.com/mssql/server:latest
+```
+
 
 Step 3: Run Container Image with Docker
 ------
