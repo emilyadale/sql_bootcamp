@@ -19,12 +19,13 @@ Docker is a software that will enable you to create containers (think Virtual Ma
 
 Step 1: Install Docker
 ------
-Navigate [here]([url](https://docs.docker.com/get-docker/)) and download the appropriate Docker version for your machine. This is a free download. You may sign up for an account if you want, but it is not necessary.
+Navigate  [here](https://docs.docker.com/get-docker/) and download the appropriate Docker version for your machine. This is a free download. You may sign up for an account if you want, but it is not necessary.
 
 Step 2: Open Docker
 ------
 Open the application you just downloaded to ensure it is functioning correctly. You will see something like this:
-![Docker]([http://url/to/img.png](https://ibb.co/vw9Vm7p))
+
+![Docker](https://ibb.co/vw9Vm7p)
 
 
 Step 2: Download SQL Server Docker Image
