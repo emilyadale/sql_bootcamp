@@ -34,7 +34,7 @@ Click on the newly created SQL Server extension on the left side of your VS Code
 * User: SA
 * Password: Password1!
 * Save Password: Yes
-* Profile Name: BIA 6203
+* Profile Name: BIA6203
 
 
 Step 4: Verify Docker is Running
