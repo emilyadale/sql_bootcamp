@@ -28,13 +28,17 @@ Step 4: Connect VS Code to Docker
 Click on the newly created SQL Server extension on the left side of your VS Code window. It is the icon that looks like a rectangle and should be at the bottom.
 1. Click "Add Connection" from the Connections screen
 2. You will be prompted to enter each part of the authentication in a text box, one item at a time. Press **enter** after each item:
-* server: localhost
+* server: localhost;1401 (Note: if your port number was different in the Docker setup, change to the port specified.)
 * database: leave blank
 * Authentication Type: SqlLogin
 * User: SA
 * Password: Password1!
 * Save Password: Yes
 * Profile Name: BIA6203
+3. Connection results will be in the lower right side of your screen. 
+
+<img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
+* Connection error? Make sure your Docker container is up and running each time you use VS Code. <br>
 
 
 Step 4: Verify Docker is Running
