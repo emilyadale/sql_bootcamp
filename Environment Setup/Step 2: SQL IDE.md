@@ -35,15 +35,12 @@ Click on the newly created SQL Server extension on the left side of your VS Code
 * Password: Password1!
 * Save Password: Yes
 * Profile Name: BIA6203
-3. Connection results will be in the lower right side of your screen. 
+3. Connection results will be in the lower right side of your screen. If you get a message asking you to Enable Trust Server Certificate, enable it.
 
 <img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
 * Connection error? Make sure your Docker container is up and running each time you use VS Code. <br>
 
 
-Step 4: Verify Docker is Running
+Step 5: Verify your Connection
 ------
-Still in the command line/terminal: (same for both Windows and Mac): <br>
-``` docker ps -a``` <br>
-
-<img src="https://github.com/emilyadale/ru_databases/blob/88867e6fe5d70bd2e54bc8bd87f7e4b61b1cf5a4/Environment%20Setup/DockerPort.png">
+After a successful connection, you should see BIA6203 on the left side of your screen under Connections.
