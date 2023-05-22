@@ -13,7 +13,7 @@ Open the application you just downloaded to ensure it is functioning correctly. 
 <img src="https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Docker_Home.png" width="500"> <br>
 
 
-Step 2: Download SQL Server Docker Image
+Step 3: Download SQL Server Docker Image
 ------
 Next, we need to download the SQL Server Docker Image, which is a file used to execute code in Docker. Open the **command line** (also called the **terminal** on Mac). 
 
@@ -29,7 +29,7 @@ sudo docker pull mcr.microsoft.com/mssql/server:latest
 ```
 If you are prompted for the password, this is your administrator/machine password.
 
-Step 3: Run Container Image with Docker
+Step 4: Run Container Image with Docker
 ------
 Still in the command line/terminal: <br>
 
@@ -51,7 +51,7 @@ If you are prompted for a password, this is your administrator/machine password.
 ```sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password1!' --name 'BIA6203' -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/azure-sql-edge:1.0.6```
 
 
-Step 4: Verify Docker is Running
+Step 5: Verify Docker is Running
 ------
 Still in the command line/terminal: (same for both Windows and Mac): <br>
 ``` docker ps -a``` <br>
