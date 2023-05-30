@@ -5,7 +5,7 @@ There are many choices for a SQL IDE. In this class, we will use Azure Data Stud
 
 Step 1: Install Azure Data Studio
 ------
-Navigate [here](https://code.visualstudio.com/Download) and download the appropriate Azure Data Studio version for your machine. This is a free download. 
+Navigate [here](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=redhat-install%2Credhat-uninstall) and download the appropriate Azure Data Studio version for your machine. This is a free download. 
 
 
 Step 2: Connect Azure Data Studio to Docker
