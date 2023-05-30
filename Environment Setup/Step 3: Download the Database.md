@@ -57,6 +57,17 @@ MOVE 'AdventureWorksLT2022_log' TO '/var/opt/mssql/data/AdventureWorksLT2012_log
 
 Note that the mdf and ldf file names came from the previous command.
 
+<img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
+If you receive an error like ``` Cannot open backup device...The system cannot find the file specified  ```  another option is to restore the database manually:
+* Open Azure Data Studio and right click on your BIA 6203 server. Click ‘Manage’
+* Click the ‘Restore’ button (to the right of New Query and New Notebook)
+* Selections to make:
+  *  Restore from: Backup File
+  *  Backup file path: click the three dot menu (…) and navigate to the path of the database /var/opt/mssql/data/AdventureWorksLT2022.bak and click OK
+* Click Restore
+ 
+
+
 Step 6: Verify the Connection
 ------
 Now, double check that the AdventureWorks database is available.
