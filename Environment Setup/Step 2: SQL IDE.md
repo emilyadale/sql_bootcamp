@@ -1,7 +1,7 @@
 SQL IDE
 ======
 Now that Docker is set up, we need to install and prepare an IDE, or integrated development environment. This allows us to interact with our database in a user-friendly environment.
-There are many choices for a SQL IDE. In this class, we will use Azure Data Studio, which is available for both Mac and Windows.
+There are many choices for a SQL IDE. In this bootcamp, we will use Azure Data Studio, which is available for both Mac and Windows.
 
 Step 1: Install Azure Data Studio
 ------
@@ -22,7 +22,7 @@ Now we need to point our SQL IDE to Docker so it knows where the database will b
 * Password: Password1!
 * Remember Password: Check Yes to prevent logging in each time
 * Database: Leave at Default
-* Name: Whatever you want to call this. I will call mine BIA 6203
+* Name: Whatever you want to call this. I will call mine Bootcamp.
 If you get a message asking you to Enable Trust Server Certificate, enable it.
 
 <img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
