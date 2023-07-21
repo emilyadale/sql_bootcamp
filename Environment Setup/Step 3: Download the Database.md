@@ -13,15 +13,15 @@ Step 2: Copy the Database to Docker
 <img src="https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Windows.png" width="25" height="25"> From the command line, enter this:
 
 ```
-docker cp [Path to AdventureWorksLT2022.bak] BIA6203:/var/opt/mssql/data/ 
+docker cp [Path to AdventureWorksLT2022.bak] RUBootcamp:/var/opt/mssql/data/ 
 ```
 <img src="https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Mac.png" width="25" height="25"> From the terminal, enter this:
 
 ```
-sudo docker cp [Path to AdventureWorksLT2022.bak] BIA6203:/var/opt/mssql/data
+sudo docker cp [Path to AdventureWorksLT2022.bak] RUBootcamp:/var/opt/mssql/data
 ```
 Make sure you change [Path to AdventureWorksLT2022.bak] to the path where the file was saved. For example, I am on Mac and saved the database to my Downloads folder, so my command looks like: <br>
-```sudo docker cp /Users/emilydale/Downloads/AdventureWorksLT2022.bak BIA6203:/var/opt/mssql/data```
+```sudo docker cp /Users/emilydale/Downloads/AdventureWorksLT2022.bak RUBootcamp:/var/opt/mssql/data```
 If prompted for a password, use your administrator/machine password. 
 
 Once the file is successfully copied to Docker, you may delete it from your machine. I recommend finishing the rest of these steps before deleting.
@@ -59,11 +59,12 @@ Note that the mdf and ldf file names came from the previous command.
 
 <img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
 If you receive an error like ``` Cannot open backup device...The system cannot find the file specified  ```  another option is to restore the database manually:
-* Open Azure Data Studio and right click on your BIA 6203 server. Click ‘Manage’
+* Open Azure Data Studio and right click on your Bootcamp server. Click ‘Manage’
 * Click the ‘Restore’ button (to the right of New Query and New Notebook)
 * Selections to make:
   *  Restore from: Backup File
   *  Backup file path: click the three dot menu (…) and navigate to the path of the database /var/opt/mssql/data/AdventureWorksLT2022.bak and click OK
+  *  Target Database: AdventureWorks
 * Click Restore
  
 
@@ -71,9 +72,14 @@ If you receive an error like ``` Cannot open backup device...The system cannot f
 Step 6: Verify the Connection
 ------
 Now, double check that the AdventureWorks database is available.
-1. Go to Connections and expand BIA6203 under Servers
+1. Go to Connections and expand Bootcamp under Servers
 2. Verify AdventureWorks is there
 
+Step 7: Final Confirmation
+------
+Now that you have successfully restored the database, you can confirm your connection by putting this in the query window and running it: <br>
+```SELECT COUNT(DISTINCT ProductCategoryID) FROM AdventureWorks.SalesLT.Product;``` <br>
+If the result is 37, you are good to go!
 
-Now that you have successfully restored the database, you can continue on to Homework #1!
+_Confused on these steps? Don't worry, we'll go over them in detail at the bootcamp! This just allows everyone to start with the same environment._
 
