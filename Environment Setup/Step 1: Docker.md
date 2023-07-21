@@ -35,20 +35,20 @@ Still in the command line/terminal: <br>
 
 <img src="https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Windows.png" width="25" height="25"> From the command line, enter this:
 ```
-docker run -e "ACCEPT_EULA=Y" -e MSSQL_SA_PASSWORD=Password1! --name "BIA6203" -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:latest
+docker run -e "ACCEPT_EULA=Y" -e MSSQL_SA_PASSWORD=Password1! --name "RUBootcamp" -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:latest
 ```
 
 <img src="https://github.com/emilyadale/ru_databases/blob/43d4ab33f2063b159931e31fc94d4d21aa09098c/Environment%20Setup/Mac.png" width="25" height="25"> From the terminal, enter this:
 
 ```
-sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password1!' --name 'BIA6203' -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:latest
+sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password1!' --name 'RUBootcamp' -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/mssql/server:latest
 ```
 If you are prompted for a password, this is your administrator/machine password. 
 
 <img src="https://github.com/emilyadale/ru_databases/blob/135d12de0f9101d80a140b9463da079962211a5b/Environment%20Setup/gearRed.png" width="50" height="50"> **Troubleshooting Tips:** <br>
 * If you receive an error like ``` event not found: ' ```  you might need to manually type the quotation marks as copy/paste sometimes does some odd things. <br>
 * If you have a newer Mac with the M1 OS and you receive an error, change the above command in the terminal to: <br>
-```sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password1!' --name 'BIA6203' -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/azure-sql-edge:1.0.6```
+```sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password1!' --name 'RUBootcamp' -p 1401:1433 -v sql1data:/var/opt/mssql -d mcr.microsoft.com/azure-sql-edge:1.0.6```
 
 
 Step 5: Verify Docker is Running
